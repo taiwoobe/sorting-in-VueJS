@@ -15,10 +15,11 @@
 
 <body>
 
-  <div id="app">
+<div id="app">
+  <h3>Search a Movie: <input v-model="filterText" /></h3>
   <h3>Sort Movies by: 
     <button @click="sortLowest">Least Rated</button>
-    <button @click="sortHighest">Highest Rated</button>
+    <button @click="sortHighest">Most Rated</button>
   </h3>
   <table>
     <thead>
@@ -29,7 +30,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr v-for="entry in ratingsInfo">
+      <tr v-for="entry in filteredFilms">
 <!--         <td>{{ entry.title }}</td>
         <td> {{ entry.rating }} </td> -->
 <td v-for="key in columns">
