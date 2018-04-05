@@ -1,0 +1,45 @@
+body, button {
+  font-family: 'Bitter', serif;
+}
+
+#app {
+  padding: 30px;
+  max-width: 600px;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+table {
+  background: #444;
+  color: white;
+}
+
+th {
+  background: #333;
+  text-transform: capitalize;
+  text-align: left;
+}
+
+td, th {
+  padding: 10px;
+  border-bottom: 1px solid #888;
+}
+
+td:first-child {
+  width: 430px;
+  border-right: 1px solid #888;
+}
+
+tr:last-child {
+  td {
+    border-bottom: none;
+  }
+}
+
+button {
+  background: orangered;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
